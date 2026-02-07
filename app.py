@@ -1,16 +1,16 @@
 import os
+import sys
 import numpy as np
 import pandas as pd
 import streamlit as st
 
-from joblib import load
-import matplotlib.pyplot as plt
+st.set_page_config(page_title="IVF/ICSI Predictor (Table S2)", layout="wide")
 
-# SHAP (tree explainer)
-import shap
-
-import sys
+# ahora sí puedes usar Streamlit
+st.title("IVF/ICSI Cumulative Live Birth Predictor (Table S2) — Demo App")
+st.caption("⚠️ Demo only. Synthetic model/data; not clinically valid.")
 st.sidebar.write("Python:", sys.version)
+
 
 # -----------------------------
 # App config
