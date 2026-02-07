@@ -152,10 +152,11 @@ st.sidebar.caption(
 # Try to load model
 try:
     bundle, pipe, FEATURES, target = load_model_bundle(model_path)
+
     # 🔧 Fix compatibilidad XGBoost antiguos
-model = pipe.named_steps["model"]
-if not hasattr(model, "use_label_encoder"):
-    model.use_label_encoder = False
+    model = pipe.named_steps["model"]
+    if not hasattr(model, "use_label_encoder"):
+        model.use_label_encoder = False
 
 except Exception as e:
     st.error(
