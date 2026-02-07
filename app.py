@@ -4,21 +4,12 @@ import numpy as np
 import pandas as pd
 import streamlit as st
 
+# App config (SOLO UNA VEZ y lo primero)
 st.set_page_config(page_title="IVF/ICSI Predictor (Table S2)", layout="wide")
 
-# ahora sí puedes usar Streamlit
 st.title("IVF/ICSI Cumulative Live Birth Predictor (Table S2) — Demo App")
 st.caption("⚠️ Demo only. Synthetic model/data; not clinically valid.")
 st.sidebar.write("Python:", sys.version)
-
-
-# -----------------------------
-# App config
-# -----------------------------
-st.set_page_config(page_title="IVF/ICSI Predictor (Table S2)", layout="wide")
-st.title("IVF/ICSI Cumulative Live Birth Predictor (Table S2) — Demo App")
-st.caption("⚠️ Demo only. Synthetic model/data; not clinically valid.")
-
 
 DEFAULT_MODEL_PATH = "xgb_table_s2.joblib"
 
