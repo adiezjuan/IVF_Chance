@@ -9,6 +9,8 @@ import matplotlib.pyplot as plt
 # SHAP (tree explainer)
 import shap
 
+import sys
+st.sidebar.write("Python:", sys.version)
 
 # -----------------------------
 # App config
