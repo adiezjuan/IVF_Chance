@@ -3,7 +3,7 @@ import sys
 import numpy as np
 import pandas as pd
 import streamlit as st
-
+from joblib import load   # ← ESTA LÍNEA FALTABA
 # App config (SOLO UNA VEZ y lo primero)
 st.set_page_config(page_title="IVF/ICSI Predictor (Table S2)", layout="wide")
 
